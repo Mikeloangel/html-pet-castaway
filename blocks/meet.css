@@ -1,0 +1,162 @@
+.meet {
+  margin-bottom: 200px;
+}
+
+.meet__img-wrapper {
+  grid-column: 7/13;
+  grid-row: 1/2;
+  padding: 0 20px 20px 0;
+}
+
+.meet__img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+}
+
+.meet__wrapper {
+  grid-column: 1/7;
+  grid-row: 1/2;
+
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meet__link {
+  --color: var(--color-accent);
+  --transition: var(--transition-hover);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 112px;
+  height: 112px;
+  background-color: var(--color);
+  border-radius: 50%;
+
+  margin-bottom: 20px;
+
+  transition: var(--transition);
+}
+
+.meet__link:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.657);
+}
+
+.meet__link-arrow {
+  max-width: 90%;
+}
+
+.meet__label {
+  --color: var(--color-accent);
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  color: var(--color);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.meet__title {
+  --color: var(--coloron-primary);
+
+  padding: 0;
+  margin: 0 0 25px 0;
+  box-sizing: border-box;
+
+  color: var(--color);
+  font-size: 65px;
+  line-height: 1.22;
+  letter-spacing: 3px;
+
+  width: 90%;
+}
+
+.meet__paragraph {
+  --color: var(--coloron-primary);
+
+  padding: 0;
+  margin: 0 0 30px;
+  box-sizing: border-box;
+
+  color: var(--color);
+  font-size: 22px;
+  line-height: 1.5;
+
+  opacity: .7;
+
+  max-width: 85%;
+}
+
+.meet__paragraph:last-of-type {
+  margin: 0;
+}
+
+@media screen and (max-width:766px) {
+  .meet__title {
+    font-size: 40px;
+  }
+
+  .meet__link {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .meet__wrapper {
+    grid-column: 1/10;
+    z-index: 41;
+  }
+
+  .meet__img-wrapper {
+    grid-column: -1/-10;
+    z-index: 40;
+    position: relative;
+    padding: 0;
+  }
+
+  .meet__img-wrapper::before {
+    --color: var(--color-primary);
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 0, 0, 0), var(--color));
+  }
+}
+
+@media screen and (max-width:425px) {
+  .meet__img-wrapper::before {
+    all: unset;
+  }
+
+  .meet__wrapper{
+    grid-column: -1/1;
+    padding: 20px;
+  }
+
+  .meet__img-wrapper{
+    grid-column: -1/1;
+    opacity: .3;
+  }
+
+  .meet__title{
+    font-size: 26px;
+  }
+
+  .meet__paragraph{
+    font-size: 16px;
+  }
+}

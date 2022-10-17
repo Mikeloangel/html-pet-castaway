@@ -3,7 +3,7 @@
   align-items: baseline;
   row-gap: 70px;
 
-  margin-bottom: 100px;
+  margin-bottom: 257px;
 }
 
 .episodes__title {
@@ -72,6 +72,7 @@
 @media screen and (max-width:766px) {
   .episodes{
     row-gap: 32px;
+    margin-bottom: 157px;
   }
   .episodes__title{
     font-size: 22px;
@@ -85,10 +86,15 @@
 }
 
 @media screen and (max-width:425px) {
+  .episodes{
+    margin-bottom: 87px;
+  }
+
   .episodes__title{
     grid-column: 1/12;
     grid-row: 1/2;
   }
+
   .episodes__link{
     grid-column: 1/-1;
     grid-row: 3/4;

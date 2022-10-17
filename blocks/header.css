@@ -176,6 +176,7 @@
     z-index: 300;
     background-color: var(--color-bg)
   }
+
   .header__nav-backdrop{
     display: none;
   }
