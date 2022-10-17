@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #191919;
+  --color-secondary: #000000;
+  --coloron-primary: #ffffff;
+  --color-accent: #118DA8;
+
+  --transition-hover: all 300ms ease;
+}
+
+.margin-left-s{
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .margin-left-s{
+    margin-left: 0;
+  }
+}

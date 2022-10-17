@@ -1,0 +1,13 @@
+/* introduces a grid system with no subgrid */
+.section {
+  padding-inline: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@media screen and (max-width:766px) {
+  .section {
+    padding-inline: 20px;
+  }
+}

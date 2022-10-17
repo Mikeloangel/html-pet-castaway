@@ -1,0 +1,6 @@
+/* header main and footer */
+.top-block {
+  max-width: min(100%, 1440px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}

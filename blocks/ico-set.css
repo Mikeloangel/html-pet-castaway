@@ -1,0 +1,41 @@
+.ico-set {
+  padding: 0;
+}
+
+.ico-set__title {
+  --color: var(--coloron-primary);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color);
+}
+
+.ico-set__list {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+
+.ico-set__item-link {
+  --transition: var(--transition-hover);
+  transition: var(--transition);
+}
+
+.ico-set__item-link:hover {
+  opacity: .6;
+}
+
+.ico-set__ico {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+@media screen and (max-width:425px) {
+  .ico-set__ico {
+    max-width: 18px;
+    max-height: 18px;
+  }
+}

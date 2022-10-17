@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pages/index.css">
+  <script src="./pages/index.js" type="module"></script>
+
+  <style>
+    /* disables animation before DOM loaded */
+    .preloader {
+      transition: none !important;
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -ms-transition: none !important;
+      -o-transition: none !important;
+    }
+  </style>
+  <script>
+    // disables transition effects to trigger before load
+    const handlePreloader = () => document.querySelector('.preloader').classList.remove('preloader');
+    document.addEventListener('DOMContentLoaded', handlePreloader);
+  </script>
+  <title>Castaway</title>
+</head>
+
+<body class="body preloader">
+  <header class="top-block section header">
+    <div class="header__logo"></div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Episodes</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">About</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__burger">
+      <div class="header__burger-stripe"></div>
+    </div>
+    <div class="header__nav-backdrop"></div>
+  </header>
+
+  <main class="top-block main">
+    <section class="section hero" aria-label="Take your podcast to the next level">
+      <div class="hero__image-wrapper">
+        <img src="./images/hero.png" alt="Welcome to castaway" class="hero__image">
+        <img src="./images/frame-top-left.png" alt="Splash!" class="hero__image-frame">
+      </div>
+      <div class="hero__card">
+        <h1 class="hero__header">
+          Take your podcast to the
+          <span class="accent_underline">next</span>
+          <span class="accent_bold">level</span>
+        </h1>
+        <div class="ico-set margin-left-s">
+          <h2 class="ico-set__title">Listen on</h2>
+          <ul class="ico-set__list">
+            <li class="ico-set__item"><a href="#" class="ico-set__item-link"><img src="./images/logo-1.png" alt="Logo 1"
+                  class="ico-set__ico"></a></li>
+            <li class="ico-set__item"><a href="#" class="ico-set__item-link"><img src="./images/logo-2.png" alt="Logo 1"
+                  class="ico-set__ico"></a></li>
+            <li class="ico-set__item"><a href="#" class="ico-set__item-link"><img src="./images/logo-3.png" alt="Logo 1"
+                  class="ico-set__ico"></a></li>
+            <li class="ico-set__item"><a href="#" class="ico-set__item-link"><img src="./images/logo-4.png" alt="Logo 1"
+                  class="ico-set__ico"></a></li>
+            <li class="ico-set__item"><a href="#" class="ico-set__item-link"><img src="./images/logo-5.png" alt="Logo 1"
+                  class="ico-set__ico"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section episodes">
+      <h2 class="episodes__title">Latest episodes</h2>
+      <a href="#" class="episodes__link">View all episodes</a>
+      <div class="episodes__podcast-wraper">
+
+
+        <article class="podcast">
+          <img src="./images/article-1.png" alt="Audio gear" class="podcast__image">
+          <div class="podcast__wrapper">
+            <p class="podcast__category">Gear</p>
+            <p class="podcast__edisode">Episode 3</p>
+            <h2 class="podcast__title">Should you get outboard audio gear?</h2>
+            <p class="podcast__paragraph">Is hardware really worth it when it comes to podcasting? The answer is...it
+              depends. Here’s our reasons on why you might want to consider picking something up.</p>
+            <a href="#" class="podcast__link">View episode details</a>
+          </div>
+        </article>
+        <article class="episodes__episode podcast">
+          <img src="./images/article-2.png" alt="Audio gear" class="podcast__image">
+          <div class="podcast__wrapper">
+            <p class="podcast__category">Tips & Trics</p>
+            <p class="podcast__edisode">Episode 2</p>
+            <h2 class="podcast__title">Mic tricks to take you to the next level</h2>
+            <p class="podcast__paragraph">Stop rolling with those default settings on your mic. These small tweaks
+              will take you from sounding good to great.</p>
+            <a href="#" class="podcast__link">View episode details</a>
+          </div>
+        </article>
+        <article class="episodes__episode podcast">
+          <img src="./images/article-3.png" alt="Audio gear" class="podcast__image">
+          <div class="podcast__wrapper">
+            <p class="podcast__category">Gear</p>
+            <p class="podcast__edisode">Episode 1</p>
+            <h2 class="podcast__title">The best microphone under $200</h2>
+            <p class="podcast__paragraph">With so many microphones on the market, how are you supposed to know
+              what’s the best? Take a look at our top picks.</p>
+            <a href="#" class="podcast__link">View episode details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
