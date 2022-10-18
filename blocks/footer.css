@@ -1,0 +1,148 @@
+.footer {
+  margin-bottom: 120px;
+}
+
+.footer__social-wrapper {
+  grid-column: 1/5;
+  grid-row: 1/2;
+
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__logo {
+  min-width: 224px;
+  min-height: 46px;
+
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__social-list {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-ico {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.footer__social-link {
+  --transition: var(--transition-hover);
+  transition: var(--transition);
+}
+
+.footer__social-link:hover {
+  opacity: .3;
+}
+
+.footer__nav {
+  grid-column: 5/9;
+  grid-row: 1/2;
+
+  padding-left: 35px;
+
+  display: flex;
+  gap: 120px;
+}
+
+.footer__nav-list {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer__nav-link {
+  --color: var(--coloron-primary);
+  --transition: var(--transition-hover);
+
+  color: var(--color);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.5;
+
+  transition: var(--transition);
+}
+
+.footer__nav-link:hover {
+  --color: var(--color-accent);
+  color: var(--color);
+}
+
+.footer__icons {
+  grid-column: 9/-1;
+  grid-row: 1/2;
+
+  padding-left: 20px;
+}
+
+@media screen and (max-width:1024px) {
+  .footer__nav{
+    padding-left: 0;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width:865px) {
+  .footer{
+    row-gap: 30px;
+  }
+
+  .footer__social-wrapper{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .footer__nav{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+
+    flex-direction: column;
+
+    padding-left: 20px;
+  }
+
+  .footer__nav-list{
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .footer__icons{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .footer{
+    margin-bottom: 60px;
+  }
+
+  .footer__logo{
+    min-width: 112px;
+    min-height: 23px;
+  }
+  .footer__nav-link{
+    font-size: 16px;
+  }
+}

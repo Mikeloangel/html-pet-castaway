@@ -1,7 +1,7 @@
 .feedback{
 
   margin-inline: 20px;
-  margin-bottom: 120px;
+  margin-bottom: 200px;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
@@ -10,6 +10,7 @@
 
 .feedback__card{
   --color-bg: var(--color-secondary);
+  --transition: var(--transition-hover);
 
   border: 0;
   border-radius: 32px;
@@ -23,6 +24,13 @@
   gap: 20px;
 
   min-width: 400px;
+
+  transition: var(--transition);
+}
+
+.feedback__card:hover{
+  box-shadow: 0 0 5px black;
+  transform: perspective(800px) rotateY(-5deg) rotateX(5deg);
 }
 
 .feedback__star-wrapper{
@@ -98,5 +106,11 @@
 
   .feedback__name{
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .feedback{
+    margin-bottom: 60px;
   }
 }

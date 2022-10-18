@@ -138,6 +138,10 @@
 }
 
 @media screen and (max-width:425px) {
+  .meet{
+    margin-bottom: 60px;
+  }
+
   .meet__img-wrapper::before {
     all: unset;
   }

@@ -70,6 +70,8 @@
   margin: 0;
   box-sizing: border-box;
   width: min-content;
+
+  cursor: pointer;
 }
 
 .subscribe__frame-img {
@@ -145,6 +147,10 @@
 }
 
 @media screen and (max-width:425px) {
+  .subscribe{
+    margin-bottom: 60px;
+  }
+
   .subscribe__frame-img{
     bottom: -28px;
     left: -16px;
