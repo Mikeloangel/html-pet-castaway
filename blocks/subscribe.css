@@ -1,0 +1,154 @@
+.subscribe {
+  --color-bg: var(--color-secondary);
+
+  position: relative;
+
+  border-radius: 32px;
+  background-color: var(--color-bg);
+
+  padding: 60px;
+  margin-inline: 70px;
+  box-sizing: border-box;
+
+  margin-bottom: 120px;
+}
+
+.subscribe__wrapper {
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+
+.subscribe__form {
+  grid-column: 7/-1;
+  grid-row: 1/2;
+
+  padding: 0 0 20px 65px;
+  margin: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.subscribe__input {
+  --colog-bg: var(--color-primary);
+  --color: var(--coloron-primary);
+
+  padding: 28px 20px;
+  margin: 0;
+  box-sizing: border-box;
+
+  border: 0;
+  border-radius: 6px;
+
+  color:var(--color);
+  background-color: var(--colog-bg);
+
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.subscribe__input::placeholder {
+  --color: var(--coloron-primary);
+  color: var(--color);
+  opacity: .6;
+}
+
+.subscribe__button{
+  --color: var(--coloron-primary);
+  --color-bg: var(--color-accent);
+
+  color: var(--color);
+  background-color: var(--color-bg);
+
+  border: 0;
+  border-radius: 6px;
+
+  padding: 14px 18px;
+  margin: 0;
+  box-sizing: border-box;
+  width: min-content;
+}
+
+.subscribe__frame-img {
+  position: absolute;
+  bottom: -28px;
+  left: -37px;
+}
+
+.subscribe__label {
+  --color: var(--color-accent);
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  color: var(--color);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.subscribe__title {
+  --color: var(--coloron-primary);
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  color: var(--color);
+  font-size: 72px;
+  line-height: 1.1;
+  letter-spacing: 2.88px;
+
+  width: 90%;
+}
+
+@media screen and (max-width:1024px) {
+  .subscribe__title{
+    font-size: 46px;
+    width: 100%;
+  }
+
+  .subscribe__form{
+    padding: 0;
+  }
+
+  .subscribe__input{
+    padding: 18px 10px;
+  }
+}
+
+@media screen and (max-width:766px) {
+  .subscribe{
+    padding: 30px;
+    padding-bottom: 60px;
+    margin-inline: 20px;
+  }
+
+  .subscribe__wrapper{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+    padding-bottom: 20px;
+  }
+
+  .subscribe__form{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+
+  .subscribe__title{
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .subscribe__frame-img{
+    bottom: -28px;
+    left: -16px;
+    width: 70px;
+    height: 70px;
+  }
+}
